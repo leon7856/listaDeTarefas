@@ -4,7 +4,7 @@
     <div class="row row-cols-3">
       <div class="col center-div">
         <div class="card" style="width: 85%;">
-          <img src="../assets/mclaren.jpg" class="card-img-top" alt="...">
+          <img src="../assets/imglist.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">To Do List</h5>
             <p class="card-text">A simple to-do list made using Vue.js.</p>
