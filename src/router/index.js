@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import List from '../components/ToDoList/List.vue'
+import Cep from '../components/FormCep/Cep.vue'
+
 
 const routes = [
   {
@@ -20,6 +22,11 @@ const routes = [
     path: '/list',
     name: 'list',
     component: List
+  },
+  {
+    path: '/cep',
+    name: 'cep',
+    component: Cep
   }
 ]
 
