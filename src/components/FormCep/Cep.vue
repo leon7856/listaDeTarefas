@@ -39,7 +39,9 @@
 
 <script>
 import Address from '@/entities/address';
-import axios from 'axios';
+
+// Service
+import viacep from '@/Service/viacep'
 
 export default {
   data() {
@@ -49,8 +51,6 @@ export default {
   },
   watch: {
     "address.cep": function (value) {
-      const bla = this.removeTraco(this.address.cep);
-      console.log(bla.length);
       if (value.length >= 8) {
         this.buscarCEP(this.address.cep)
       }
@@ -60,10 +60,10 @@ export default {
     async buscarCEP(cep) {
       try {
         const cepSemtraco = this.removeTraco(cep);
-        const responseAxios = await axios.get(`https://viacep.com.br/ws/${cepSemtraco}/json/`);
-        console.log(responseAxios);
-        if (!responseAxios.data.erro) {
-          this.address = new Address(responseAxios.data)
+        const response = await viacep.getLocation(cepSemtraco)
+        console.log(response);
+        if (!response.data.erro) {
+          this.address = new Address(response.data)
         }
       } catch (error) {
         console.error('Erro ao buscar o CEP:', error);

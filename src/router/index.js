@@ -2,6 +2,9 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import List from '../components/ToDoList/List.vue'
 import Cep from '../components/FormCep/Cep.vue'
+import Moedas from '../components/Moedas/Moedas.vue'
+import Relogio from '../components/Relogio/Relogio.vue'
+import Carro from '../components/Carro/Carro.vue'
 
 
 const routes = [
@@ -27,6 +30,21 @@ const routes = [
     path: '/cep',
     name: 'cep',
     component: Cep
+  },
+  {
+    path: '/moedas',
+    name: 'moedas',
+    component: Moedas
+  },
+  {
+    path: '/relogio',
+    name: 'relogio',
+    component: Relogio
+  },
+  {
+    path: '/carro',
+    name: 'carro',
+    component: Carro
   }
 ]
 
