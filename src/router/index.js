@@ -5,6 +5,13 @@ import Cep from '../components/FormCep/Cep.vue'
 import Moedas from '../components/Moedas/Moedas.vue'
 import Relogio from '../components/Relogio/Relogio.vue'
 import Carro from '../components/Carro/Carro.vue'
+import Porsche from '../components/Porsche/Porsche.vue'
+import Lamborghine from '../components/Lamborghine-Aventador/Lamborghine.vue'
+import Nissan from '../components/Nissan/Nissan.vue'
+import Urus from '../components/Urus/Urus.vue'
+import Range from '../components/Range/Range.vue'
+import Volvo from '../components/Volvo/Volvo.vue'
+
 
 
 const routes = [
@@ -45,6 +52,36 @@ const routes = [
     path: '/carro',
     name: 'carro',
     component: Carro
+  },
+  {
+    path: '/porsche',
+    name: 'porsche',
+    component: Porsche
+  },
+  {
+    path: '/lamborghine',
+    name: 'lamborghine',
+    component: Lamborghine
+  },
+  {
+    path: '/nissan',
+    name: 'nissan',
+    component: Nissan
+  },
+  {
+    path: '/urus',
+    name: 'urus',
+    component: Urus
+  },
+  {
+    path: '/range',
+    name: 'range',
+    component: Range
+  },
+  {
+    path: '/volvo',
+    name: 'volvo',
+    component: Volvo
   }
 ]
 
